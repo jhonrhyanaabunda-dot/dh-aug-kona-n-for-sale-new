@@ -349,9 +349,9 @@
   .hero h1 em { font-style: normal; font-weight: 700; color: var(--blue); }
   .hero h1 .num { font-feature-settings: "lnum"; font-weight: 700; }
   .hero .deck {
-    font-size: 22px; line-height: 1.45; max-width: 760px;
+    font-size: 20px; line-height: 1.55; max-width: 760px;
     color: var(--ink-soft); font-weight: 400;
-    margin: 0 0 44px;
+    margin: 0 0 36px;
     text-wrap: pretty;
   }
 
@@ -1348,6 +1348,9 @@
     .staff-note { gap:18px; padding:18px; }
     .staff-note video { width:100%; max-width:280px; margin:0 auto; }
   }
+
+  /* July parity: deck spans the wrap at July's computed metrics (17px/1.7, no cap) */
+  .hero .deck { font-size: 17px; line-height: 1.7; max-width: none; margin: 0 0 20px; }
 </style>
 </head>
 <body>
@@ -1359,7 +1362,7 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Model Sales · Dalton Hyundai National City</div>
     <h1>Kona N for sale, the hot <em>Hyundai crossover.</em></h1>
-    <p class="deck">Looking for a Kona N near San Diego? Dalton Hyundai National City stocks Hyundai's turbocharged, track-tuned small SUV at 3150 National City Blvd, right off I-5 between downtown San Diego and Chula Vista. See live inventory at hyundaidalton.com or call our sales team at <a class="tel" href="tel:+16194523217">(619) 452-3217</a> to book a test drive.</p>
+    <p class="deck">We stock Hyundai's turbocharged, track-tuned Kona N at 3150 National City Blvd, right off I-5 between downtown San Diego and Chula Vista. See live inventory at <a href="https://www.hyundaidalton.com" rel="noopener">hyundaidalton.com</a>, or call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> to book a test drive.</p>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">3150 National City Blvd<small>National City, CA 91950</small></div></div>
