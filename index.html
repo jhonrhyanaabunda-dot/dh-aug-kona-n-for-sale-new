@@ -45,6 +45,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "VideoObject",
+      "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#video-express",
+      "name": "Dalton Hyundai National City Express Store — buying online",
+      "description": "An overview of buying a Hyundai online through the Dalton Hyundai National City Express Store, including up-front pricing and building your own terms.",
+      "thumbnailUrl": "https://www.hyundaidalton.com/kona-n-for-sale/express-store-poster.jpg",
+      "uploadDate": "2026-08-01",
+      "contentUrl": "https://www.hyundaidalton.com/kona-n-for-sale/express-store.mp4",
+      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+    },
+    {
       "@type": "Article",
       "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#article",
       "headline": "Kona N for Sale at Dalton Hyundai National City",
@@ -329,9 +339,9 @@
   .hero h1 {
     font-family: var(--display);
     font-weight: 700;
-    font-size: clamp(44px, 6.4vw, 92px);
-    line-height: 1.0;
-    letter-spacing: -0.03em;
+    font-size: clamp(28px, 4.8vw, 64px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
     margin: 0 0 28px;
     color: var(--ink);
     text-wrap: balance;
@@ -1289,6 +1299,55 @@
     }
     .btn:hover .arrow { transform: none; }
   }
+
+  /* ---------- July-template parity (hero CTA, breadcrumbs, rail action, staff note) ---------- */
+  .hero h1 { text-transform: uppercase; }
+  .hero-cta { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:0 0 32px; }
+  .hero-cta a { display:inline-flex; align-items:center; gap:8px; font-family:var(--display);
+    font-weight:600; font-size:16px; text-decoration:none; border-radius:999px; padding:14px 28px;
+    transition:background .2s ease, color .2s ease, border-color .2s ease; }
+  .hero-cta a.primary { background:var(--blue); color:#fff; border:1px solid var(--blue); }
+  .hero-cta a.primary:hover { background:var(--blue-deep); border-color:var(--blue-deep); }
+  .hero-cta a.secondary { background:transparent; color:var(--blue); border:1px solid var(--rule); }
+  .hero-cta a.secondary:hover { border-color:var(--blue); }
+  .hero-cta .arrow { transition:transform .2s ease; }
+  .hero-cta a:hover .arrow { transform:translateX(3px); }
+  .breadcrumb-bar { border-bottom:1px solid var(--rule-soft); }
+  .breadcrumb-bar nav { max-width:var(--maxw); margin:0 auto; padding:16px 24px; }
+  .breadcrumb-bar ol { list-style:none; display:flex; flex-wrap:wrap; align-items:center;
+    gap:8px; margin:0; padding:0; font-size:13px; color:var(--muted); }
+  .breadcrumb-bar li { display:flex; align-items:center; gap:8px; }
+  .breadcrumb-bar li + li::before { content:"\203A"; color:var(--muted); }
+  .breadcrumb-bar a { color:var(--muted); text-decoration:none; }
+  .breadcrumb-bar a:hover { color:var(--blue); text-decoration:underline; }
+  .rail-action { display:block; text-decoration:none; color:#fff; background:var(--blue);
+    border-radius:var(--radius-md); padding:20px; margin:0 0 16px; transition:background .15s ease; }
+  .rail-action:hover { background:var(--blue-deep); }
+  .rail-action .lbl { font-size:10px; letter-spacing:.2em; text-transform:uppercase;
+    color:rgba(255,255,255,.8); display:block; margin-bottom:8px; }
+  .rail-action strong { font-family:var(--display); font-size:18px; font-weight:600;
+    line-height:1.2; display:block; color:#fff; }
+  .rail-action .sub { font-size:13px; line-height:1.5; color:rgba(255,255,255,.85);
+    display:block; margin-top:8px; }
+  .chip .rail-link { display:inline-block; margin-top:12px; font-size:13px; font-weight:600;
+    color:var(--blue); text-decoration:none; border-bottom:1px solid transparent;
+    transition:border-color .15s ease; }
+  .chip .rail-link:hover { border-bottom-color:var(--blue); }
+  .staff-note { display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin:32px 0 8px;
+    padding:24px; border:1px solid var(--rule); border-radius:14px; background:var(--paper-2,#f6f8fa); }
+  .staff-note video { flex:0 0 auto; width:220px; max-width:100%; aspect-ratio:9/16;
+    display:block; border-radius:12px; background:#000; }
+  .staff-note video.wide { width:100%; max-width:520px; aspect-ratio:16/9; }
+  .staff-note .who { flex:1; min-width:240px; }
+  .staff-note .k { font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin-bottom:8px; }
+  .staff-note h4 { margin:0 0 12px; font-family:var(--display); font-size:19px; font-weight:600;
+    line-height:1.3; color:var(--ink); }
+  .staff-note p { margin:0; font-size:14px; line-height:1.6; color:var(--ink-soft); }
+  @media (max-width:640px) {
+    .staff-note { gap:18px; padding:18px; }
+    .staff-note video { width:100%; max-width:280px; margin:0 auto; }
+  }
 </style>
 </head>
 <body>
@@ -1308,6 +1367,11 @@
       <div class="item"><div class="lbl">Sales</div><div class="val"><a class="tel" href="tel:+16194523217">(619) 452-3217</a><small>Service: <a class="tel" href="tel:+16193145768">(619) 314-5768</a></small></div></div>
       <div class="item"><div class="lbl">Reviews</div><div class="val">4.3 ★ · 2,586+<small>Google · Dalton Hyundai</small></div></div>
     </div>
+      <div class="hero-cta">
+      <a class="primary" href="https://www.hyundaidalton.com/searchnew.aspx">Shop Kona N inventory <span class="arrow">&rarr;</span></a>
+      <a class="secondary" href="https://www.hyundaidalton.com/contactus.aspx">Talk to the team</a>
+    </div>
+  
   </div>
 
   <figure class="hero-photo full-bleed" role="img" aria-label="Hyundai Kona N at Dalton Hyundai National City">
@@ -1322,6 +1386,16 @@
     <figcaption class="visually-hidden">A Hyundai Kona N performance crossover at Dalton Hyundai National City, for sale near San Diego, serving Chula Vista, El Cajon, Kearny Mesa, and Imperial Beach.</figcaption>
   </figure>
 </header>
+<!-- Breadcrumb bar -->
+<div class="breadcrumb-bar">
+ <nav aria-label="Breadcrumb">
+  <ol>
+   <li><a href="https://www.hyundaidalton.com/">Dalton Hyundai National City</a></li>
+   <li><span aria-current="page">Kona N for Sale</span></li>
+  </ol>
+ </nav>
+</div>
+
 
 <!-- ARTICLE BODY -->
 <main class="wrap" id="main-content">
@@ -1613,6 +1687,18 @@
         <div class="section-num"><span>07</span><span>How it works</span></div>
         <h2 class="section-h">How buying a Kona N here <em>works</em>.</h2>
         <p class="lede">Here's the path from search to keys.</p>
+        <div class="staff-note" id="video-express">
+          <video class="wide" controls preload="metadata" playsinline poster="express-store-poster.jpg">
+            <source src="express-store.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="https://www.hyundaidalton.com/contactus.aspx">Contact our team</a> instead.
+          </video>
+          <div class="who">
+            <div class="k">A note from our team</div>
+            <h4>Buying it online, start to finish</h4>
+            <p>A quick look at buying online with the Dalton Hyundai National City Express Store: pricing up front, your terms built before you come in, and the paperwork mostly done by the time you arrive. Call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> if you would rather we walk you through it.</p>
+          </div>
+        </div>
+
 
         <ol class="bullets">
           <li><strong>Check inventory online.</strong> See which Kona N units are in stock at <a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener">hyundaidalton.com</a>.</li>
@@ -1657,6 +1743,17 @@
 
     <!-- Right gutter -->
     <aside class="gutter" aria-label="Trust signals">
+      <a class="rail-action" href="https://www.hyundaidalton.com/searchnew.aspx">
+        <span class="lbl">Buy online</span>
+        <strong>Start your Kona N online</strong>
+        <span class="sub">Reserve and build your deal from home. Start online →</span>
+      </a>
+      <div class="chip">
+        <div class="lbl">Finance &amp; offers</div>
+        <strong style="font-family:var(--display); font-size:18px; line-height:1.2;">Build a payment</strong>
+        <div class="sub">Bring your pre-approval and we will run the real numbers next to it.</div>
+        <a class="rail-link" href="https://www.hyundaidalton.com/finance.aspx">Explore financing &rarr;</a>
+      </div>
       <div class="chip">
         <div class="lbl">Google rating</div>
         <div class="stars">★★★★★</div>
