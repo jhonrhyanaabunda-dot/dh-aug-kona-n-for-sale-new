@@ -46,6 +46,17 @@
   "@graph": [
     {
       "@type": "VideoObject",
+      "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#video-kona-n-film",
+      "name": "The all-new KONA N | Launching Film | Hyundai",
+      "description": "Hyundai's launching film for the KONA N. Closed course with a professional driver, so treat it as a look at the car rather than a driving guide.",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/UqxtcPl4Cf4",
+      "contentUrl": "https://www.youtube.com/watch?v=UqxtcPl4Cf4",
+      "thumbnailUrl": "https://img.youtube.com/vi/UqxtcPl4Cf4/maxresdefault.jpg",
+      "uploadDate": "2026-08-01",
+      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+    },
+    {
+      "@type": "VideoObject",
       "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#video-express",
       "name": "Dalton Hyundai National City Express Store — buying online",
       "description": "An overview of buying a Hyundai online through the Dalton Hyundai National City Express Store, including up-front pricing and building your own terms.",
@@ -1351,6 +1362,15 @@
 
   /* July parity: deck spans the wrap at July's computed metrics (17px/1.7, no cap) */
   .hero .deck { font-size: 17px; line-height: 1.7; max-width: none; margin: 0 0 20px; }
+
+  /* Responsive 16:9 YouTube embed (video-embed rule: nocookie, lazy, captioned) */
+  .yt-embed { margin: 28px 0 8px; }
+  .yt-embed .frame { position: relative; width: 100%; padding-top: 56.25%;
+    background: #000; border-radius: 12px; overflow: hidden; }
+  .yt-embed .frame iframe { position: absolute; top: 0; left: 0; width: 100%;
+    height: 100%; border: 0; }
+  .yt-embed figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5;
+    color: var(--muted); max-width: 70ch; }
 </style>
 </head>
 <body>
@@ -1494,6 +1514,17 @@
         <div class="section-num"><span>03</span><span>On the lot</span></div>
         <h2 class="section-h">A walk-around <em>the way we'd give it on the lot</em>.</h2>
         <p class="lede">When a Kona N lands at National City, our team does the same thing we'd do if we were buying it ourselves.</p>
+        <figure class="yt-embed" id="video-kona-n-film">
+          <div class="frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/UqxtcPl4Cf4?rel=0&amp;modestbranding=1"
+                    title="The all-new KONA N | Launching Film | Hyundai"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <figcaption>Hyundai's launching film for the KONA N. Closed course with a professional driver, so treat it as a look at the car rather than a driving guide.</figcaption>
+        </figure>
+
         <p>We walked the most recent arrival corner to corner: we inspected the front tires for the inner-edge wear that aggressive cornering and a tight turning radius can cause, we ran the eight-speed DCT through its drive modes on a short loop to confirm the launch-control and rev-match functions engaged cleanly, and we verified the N Grin Shift overboost button did what Hyundai says it does. On one trade-in Kona N, we found uneven front tire wear during that inspection and replaced the front pair before listing it, because nobody should inherit somebody else's track-day habits at full price.</p>
 
         <p>That hands-on pass is also why our complimentary alignment check matters more on this car than on a grocery-getter. More on that below.</p>
