@@ -53,17 +53,9 @@
       "contentUrl": "https://www.youtube.com/watch?v=UqxtcPl4Cf4",
       "thumbnailUrl": "https://img.youtube.com/vi/UqxtcPl4Cf4/maxresdefault.jpg",
       "uploadDate": "2026-08-01",
-      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#video-express",
-      "name": "Dalton Hyundai National City Express Store — buying online",
-      "description": "An overview of buying a Hyundai online through the Dalton Hyundai National City Express Store, including up-front pricing and building your own terms.",
-      "thumbnailUrl": "https://www.hyundaidalton.com/kona-n-for-sale/express-store-poster.jpg",
-      "uploadDate": "2026-08-01",
-      "contentUrl": "https://www.hyundaidalton.com/kona-n-for-sale/express-store.mp4",
-      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+      "publisher": {
+        "@id": "https://www.hyundaidalton.com/#dealer"
+      }
     },
     {
       "@type": "Article",
@@ -96,12 +88,25 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Dalton Hyundai National City", "item": "https://www.hyundaidalton.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Kona N for Sale", "item": "https://www.hyundaidalton.com/kona-n-for-sale/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Dalton Hyundai National City",
+          "item": "https://www.hyundaidalton.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kona N for Sale",
+          "item": "https://www.hyundaidalton.com/kona-n-for-sale/"
+        }
       ]
     },
     {
-      "@type": ["AutoDealer", "LocalBusiness"],
+      "@type": [
+        "AutoDealer",
+        "LocalBusiness"
+      ],
       "@id": "https://www.hyundaidalton.com/#dealer",
       "name": "Dalton Hyundai National City",
       "alternateName": "Frank Hyundai",
@@ -122,13 +127,22 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "09:00",
           "closes": "20:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
+          "dayOfWeek": [
+            "Sunday"
+          ],
           "opens": "10:00",
           "closes": "18:00"
         }
@@ -146,12 +160,30 @@
         }
       ],
       "areaServed": [
-        { "@type": "City", "name": "San Diego" },
-        { "@type": "City", "name": "National City" },
-        { "@type": "City", "name": "Chula Vista" },
-        { "@type": "City", "name": "El Cajon" },
-        { "@type": "City", "name": "Kearny Mesa" },
-        { "@type": "City", "name": "Imperial Beach" }
+        {
+          "@type": "City",
+          "name": "San Diego"
+        },
+        {
+          "@type": "City",
+          "name": "National City"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista"
+        },
+        {
+          "@type": "City",
+          "name": "El Cajon"
+        },
+        {
+          "@type": "City",
+          "name": "Kearny Mesa"
+        },
+        {
+          "@type": "City",
+          "name": "Imperial Beach"
+        }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -159,26 +191,68 @@
         "reviewCount": 2586
       },
       "employee": [
-        { "@type": "Person", "name": "Cedric Butler", "jobTitle": "General Manager" },
-        { "@type": "Person", "name": "Sergio Martell", "jobTitle": "Sales Manager" },
-        { "@type": "Person", "name": "Mark Moore", "jobTitle": "Sales Manager" }
+        {
+          "@type": "Person",
+          "name": "Cedric Butler",
+          "jobTitle": "General Manager"
+        },
+        {
+          "@type": "Person",
+          "name": "Sergio Martell",
+          "jobTitle": "Sales Manager"
+        },
+        {
+          "@type": "Person",
+          "name": "Mark Moore",
+          "jobTitle": "Sales Manager"
+        }
       ],
-      "brand": { "@type": "Brand", "name": "Hyundai" }
+      "brand": {
+        "@type": "Brand",
+        "name": "Hyundai"
+      }
     },
     {
       "@type": "Product",
       "@id": "https://www.hyundaidalton.com/kona-n-for-sale/#konan",
       "name": "Hyundai Kona N",
       "category": "Performance compact SUV",
-      "brand": { "@type": "Brand", "name": "Hyundai" },
+      "brand": {
+        "@type": "Brand",
+        "name": "Hyundai"
+      },
       "description": "Hyundai Kona N, the N-division performance build of the Kona: a turbocharged, track-tuned compact SUV with a 2.0-liter turbo four, an eight-speed wet dual-clutch transmission, electronically controlled limited-slip differential, adaptive dampers, and upgraded brakes.",
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "Engine", "value": "2.0-liter turbocharged four-cylinder" },
-        { "@type": "PropertyValue", "name": "Horsepower", "value": "276 hp (Hyundai)" },
-        { "@type": "PropertyValue", "name": "Torque", "value": "289 lb-ft on overboost" },
-        { "@type": "PropertyValue", "name": "0-60 mph", "value": "About 5.0 seconds with launch control (Hyundai)" },
-        { "@type": "PropertyValue", "name": "Transmission", "value": "8-speed wet dual-clutch (DCT)" },
-        { "@type": "PropertyValue", "name": "Fuel economy", "value": "20 city / 27 highway / 23 combined mpg (EPA), premium recommended" }
+        {
+          "@type": "PropertyValue",
+          "name": "Engine",
+          "value": "2.0-liter turbocharged four-cylinder"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Horsepower",
+          "value": "276 hp (Hyundai)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Torque",
+          "value": "289 lb-ft on overboost"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "0-60 mph",
+          "value": "About 5.0 seconds with launch control (Hyundai)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Transmission",
+          "value": "8-speed wet dual-clutch (DCT)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Fuel economy",
+          "value": "20 city / 27 highway / 23 combined mpg (EPA), premium recommended"
+        }
       ]
     },
     {
@@ -1721,19 +1795,6 @@
         <div class="section-num"><span>07</span><span>How it works</span></div>
         <h2 class="section-h">How buying a Kona N here <em>works</em>.</h2>
         <p class="lede">Here's the path from search to keys.</p>
-        <div class="staff-note" id="video-express">
-          <video class="wide" controls preload="metadata" playsinline poster="express-store-poster.jpg">
-            <source src="express-store.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="https://www.hyundaidalton.com/contactus.aspx">Contact our team</a> instead.
-          </video>
-          <div class="who">
-            <div class="k">A note from our team</div>
-            <h4>Buying it online, start to finish</h4>
-            <p>A quick look at buying online with the Dalton Hyundai National City Express Store: pricing up front, your terms built before you come in, and the paperwork mostly done by the time you arrive. Call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> if you would rather we walk you through it.</p>
-          </div>
-        </div>
-
-
         <ol class="bullets">
           <li><strong>Check inventory online.</strong> See which Kona N units are in stock at <a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener">hyundaidalton.com</a>.</li>
           <li><strong>Call ahead.</strong> Ring our sales team at <a class="tel" href="tel:+16194523217">(619) 452-3217</a> to confirm a specific Kona N is available and have it ready for you. Because these are low-volume, the color or build you want may be in transit rather than on the lot.</li>
