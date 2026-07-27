@@ -1445,6 +1445,18 @@
     height: 100%; border: 0; }
   .yt-embed figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5;
     color: var(--muted); max-width: 70ch; }
+
+  /* Center spec-strip numbers without .stats full-bleed margins */
+  .spec-strip.centered .item{align-items:center;text-align:center}
+  .spec-strip.centered .num{text-align:center}
+  .spec-strip.centered .lbl{justify-content:center;text-align:center}
+  /* Wide text tokens (Mon-Sat, Frank) fit on one line inside their cells */
+  .spec-strip.stats.fitrow .num{font-size:28px}
+  .spec-strip.stats.fitrow .num small{font-size:12px}
+  .spec-strip.stats.fitrow .item{padding-left:12px;padding-right:12px}
+  /* Center the dark trust-grid stats */
+  .trust-grid .item{align-items:center;text-align:center}
+  .trust-grid .item .lbl{text-align:center;justify-content:center}
 </style>
 </head>
 <body>
@@ -1579,7 +1591,7 @@
         <h3>Checked against the recall database before it hit the line</h3>
         <p>We pulled the VIN history and checked the NHTSA recall database on each Kona N we took in this summer. If a unit had an open campaign, we cleared it with Hyundai first, a clean recall record before the car ever went up for sale.</p>
 
-        <div class="spec-strip">
+        <div class="spec-strip centered">
           <div class="item"><div class="num">276<small> hp</small></div><div class="lbl">2.0-liter turbo four (Hyundai)</div></div>
           <div class="item"><div class="num">289<small> lb-ft</small></div><div class="lbl">Torque on overboost</div></div>
           <div class="item"><div class="num">~5.0<small> s</small></div><div class="lbl">0-to-60 mph with launch control (Hyundai)</div></div>
@@ -1619,12 +1631,6 @@
         <div class="section-num"><span>04</span><span>Why shop here</span></div>
         <h2 class="section-h">Why shop the Kona N <em>at Dalton Hyundai</em>.</h2>
         <p class="lede">We're an established Hyundai dealership in National City, previously known as Frank Hyundai, and the way we sell is meant to feel like guidance, not pressure.</p>
-        <figure style="margin:32px 0 28px;display:flex;flex-direction:column;align-items:center;">
-          <div style="width:100%;max-width:320px;overflow:hidden;border-radius:12px;">
-            <img src="dalton-hyundai-team.jpg" alt="A member of the Dalton Hyundai National City team on the showroom floor" loading="lazy" decoding="async" width="720" height="1280" style="width:100%;height:auto;display:block;">
-          </div>
-          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center;max-width:60ch;">Our team on the National City showroom floor. Photo: Dalton Hyundai National City.</figcaption>
-        </figure>
 
 
         <p>A performance SUV is a specific kind of purchase, and our team is here to walk you through what the Kona N offers, how it differs from a standard Kona, and whether it fits the way you drive. No runaround, no theater.</p>
@@ -1831,7 +1837,7 @@
 
         <p>Buyers come to us from National City, San Diego, Chula Vista, El Cajon, Kearny Mesa, and Imperial Beach, all within a short hop of our location on National City Blvd. From the South Bay you're a few minutes up the I-5; from El Cajon or Kearny Mesa, the 805 and the 8 bring you right in. If you've been hunting a Kona N anywhere in the metro, we're a convenient stop right off the freeway.</p>
 
-        <div class="spec-strip stats">
+        <div class="spec-strip stats fitrow" style="margin-left:0;margin-right:0">
           <div class="item"><div class="num">4.3<small> ★</small></div><div class="lbl">Google rating across 2,586+ reviews</div></div>
           <div class="item"><div class="num">VIP</div><div class="lbl">Complimentary alignment &amp; tire check every visit</div></div>
           <div class="item"><div class="num">Mon-Sat</div><div class="lbl">Sales 9 AM to 8 PM · Sunday 10 AM to 6 PM</div></div>
