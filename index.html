@@ -1000,6 +1000,27 @@
     font-weight: 700;
   }
 
+  /* Hours card */
+  .hours-card { border: 1px solid var(--rule); border-radius: var(--radius-md); background: var(--white); padding: 22px 24px 18px; margin: 28px 0; }
+  .hours-card h4 { font-family: var(--display); font-size: 16px; font-weight: 600; color: var(--ink); margin: 0 0 14px; }
+  .hours-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .hours-table thead th { text-align: left; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 0 12px 10px 0; border-bottom: 1px solid var(--rule); }
+  .hours-table tbody th { text-align: left; font-family: var(--display); font-weight: 600; color: var(--ink); padding: 12px 12px 12px 0; white-space: nowrap; }
+  .hours-table tbody td { color: var(--ink-soft); padding: 12px 12px 12px 0; white-space: nowrap; }
+  .hours-table tbody tr + tr th, .hours-table tbody tr + tr td { border-top: 1px solid var(--rule-soft, rgba(0,0,0,.06)); }
+  .hours-table td.closed { color: var(--muted); }
+  @media (max-width: 640px) { .hours-table { font-size: 13px; } .hours-card { overflow-x: auto; } }
+
+  /* Band stat row — match the evergreen rendering */
+  .findlay-band .trust-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; margin-top:50px; padding-top:40px; border-top:1px solid rgba(255,255,255,.15); }
+  .findlay-band .trust-grid .item { display:block; padding:0; border-right:none; text-align:left; }
+  .findlay-band .trust-grid .item .num, .findlay-band .trust-grid .item .lbl { text-align:left; }
+  .findlay-band .trust-grid .item .num { font-family:var(--display); font-size:17px; font-weight:600; line-height:1.35; letter-spacing:0; color:var(--white); }
+  .findlay-band .trust-grid .item .num small { font-size:13px; font-weight:400; color:rgba(255,255,255,.7); letter-spacing:0; }
+  .findlay-band .trust-grid .item .lbl { font-size:13px; letter-spacing:0; text-transform:none; color:rgba(255,255,255,.7); margin-top:4px; line-height:1.45; max-width:26ch; }
+  @media (max-width:900px){ .findlay-band .trust-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
+  @media (max-width:560px){ .findlay-band .trust-grid { grid-template-columns:minmax(0,1fr); gap:18px; } }
+
   /* ---------- Why Dalton band ---------- */
   .findlay-band {
     background: var(--ink);
@@ -1132,9 +1153,7 @@
     margin-bottom: 18px;
     display: flex; align-items: center; gap: 10px;
   }
-  .cta-inline .eyebrow::before {
-    content: ""; width: 28px; height: 1px; background: #9cc8ff;
-  }
+  .cta-inline .eyebrow::before { content: none; }
   .cta-inline h3 {
     font-family: var(--display); font-size: clamp(32px, 3.4vw, 44px);
     font-weight: 700; margin: 0 0 14px; color: var(--white);
@@ -1727,7 +1746,14 @@
           <li><strong>Complimentary In-Drive Alignment Check and Tire Check every visit.</strong> Every time your Kona N comes in, we check alignment and tires at no charge, and on a vehicle driven the way an N is meant to be driven, that's exactly the kind of upkeep that protects your tires and keeps it handling right.</li>
         </ul>
 
-        <p>Why does the free alignment check matter so much on this car specifically? The Kona N rides on summer-biased performance rubber and a sport-tuned suspension. A clipped curb on a San Diego parking structure ramp, a pothole on a National City side street, or a few hard launches can nudge your alignment out of spec, and on a car this sensitive you'll feel it as a tug in the wheel and see it as ragged inner-edge tire wear weeks later. A set of performance tires is not cheap to replace early. Catching a half-degree of toe before it eats $800 worth of rubber is precisely the kind of thing a complimentary check pays for itself on. Our parts department (Monday through Friday 7:00 AM to 6:00 PM) stocks or orders genuine Hyundai components for it.</p>
+        <p>Why does the free alignment check matter so much on this car specifically? The Kona N rides on summer-biased performance rubber and a sport-tuned suspension.</p>
+
+        <ul class="bullets">
+          <li><strong>It goes out of spec easily.</strong> A clipped curb on a San Diego parking-structure ramp, a pothole on a National City side street, or a few hard launches can nudge your alignment out.</li>
+          <li><strong>You will feel it.</strong> On a car this sensitive it shows up as a tug in the wheel, then as ragged inner-edge tire wear weeks later.</li>
+          <li><strong>Performance tires are not cheap to replace early.</strong> Catching a half-degree of toe before it eats $800 worth of rubber is precisely what a complimentary check pays for itself on.</li>
+          <li><strong>Parts on hand.</strong> Our parts department stocks or orders genuine Hyundai components for it, Monday through Friday 7:00 AM to 6:00 PM.</li>
+        </ul>
 
         <p>The people who sell you the Kona N are the same store you'll come back to for maintenance, sales, service, and parts all under one roof in National City.</p>
 
@@ -1865,14 +1891,21 @@
 
         <p>Buyers come to us from National City, San Diego, Chula Vista, El Cajon, Kearny Mesa, and Imperial Beach, all within a short hop of our location on National City Blvd. From the South Bay you're a few minutes up the I-5; from El Cajon or Kearny Mesa, the 805 and the 8 bring you right in. If you've been hunting a Kona N anywhere in the metro, we're a convenient stop right off the freeway.</p>
 
-        <h3>Sales, service &amp; parts hours</h3>
-        <ul class="bullets">
-          <li><strong>Sales:</strong> Mon-Fri 9:00 AM - 8:00 PM · Sat 8:00 AM - 8:00 PM · Sun 10:00 AM - 6:00 PM</li>
-          <li><strong>Service:</strong> Mon-Fri 7:00 AM - 6:00 PM · Sat 8:00 AM - 3:00 PM · Sun closed</li>
-          <li><strong>Parts:</strong> Mon-Fri 7:00 AM - 6:00 PM · Sat 8:00 AM - 3:00 PM · Sun closed</li>
-        </ul>
+        <div class="hours-card">
+          <h4>Sales, service &amp; parts hours</h4>
+          <table class="hours-table">
+            <thead>
+              <tr><th><span class="visually-hidden">Department</span></th><th>Mon&ndash;Fri</th><th>Saturday</th><th>Sunday</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Sales</th><td>9:00 AM &ndash; 8:00 PM</td><td>8:00 AM &ndash; 8:00 PM</td><td>10:00 AM &ndash; 6:00 PM</td></tr>
+              <tr><th>Service</th><td>7:00 AM &ndash; 6:00 PM</td><td>8:00 AM &ndash; 5:00 PM</td><td class="closed">Closed</td></tr>
+              <tr><th>Parts</th><td>7:00 AM &ndash; 6:00 PM</td><td>8:00 AM &ndash; 3:00 PM</td><td class="closed">Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
 
-        <p>One of the conveniences of buying here: we're open for Sunday sales from 10:00 AM to 6:00 PM, so you can come look at a Kona N on a day most people have free. Service and parts are closed Sundays, so if you need a question answered by a technician, plan a Saturday-morning visit before the 3:00 PM close. Reach sales at <a class="tel" href="tel:+16194523217">(619) 452-3217</a>, service at <a class="tel" href="tel:+16193145768">(619) 314-5768</a>, and parts at <a class="tel" href="tel:+16196040487">(619) 604-0487</a>.</p>
+        <p>One of the conveniences of buying here: we're open for Sunday sales from 10:00 AM to 6:00 PM, so you can come look at a Kona N on a day most people have free. Service and parts are closed Sundays, so if you need a question answered by a technician, plan a Saturday-morning visit before the 5:00 PM close. Reach sales at <a class="tel" href="tel:+16194523217">(619) 452-3217</a>, service at <a class="tel" href="tel:+16193145768">(619) 314-5768</a>, and parts at <a class="tel" href="tel:+16196040487">(619) 604-0487</a>.</p>
       </section>
     </div>
 
@@ -1920,6 +1953,13 @@
     <div class="eyebrow">Dalton Hyundai National City</div>
     <h2>A dealership you can <em>check out before you trust it</em>.</h2>
     <p class="band-deck">Formerly Frank Hyundai, Dalton Hyundai National City has long served drivers throughout San Diego, Chula Vista, El Cajon, Kearny Mesa, and Imperial Beach, led by General Manager Cedric Butler, with sales managed by Sergio Martell and Mark Moore.</p>
+
+    <div class="trust-grid">
+      <div class="item"><div class="num">4.3<small> ★</small></div><div class="lbl">Google rating &middot; 2,595 reviews</div></div>
+      <div class="item"><div class="num">276<small> hp</small></div><div class="lbl">2.0-litre turbo four, 289 lb-ft on overboost</div></div>
+      <div class="item"><div class="num">23<small> mpg</small></div><div class="lbl">EPA combined, 20 city / 27 highway</div></div>
+      <div class="item"><div class="num">VIP</div><div class="lbl">Complimentary alignment and tire check, every visit</div></div>
+    </div>
 
     <div class="findlay-extras">
       <div>
