@@ -517,11 +517,11 @@
   /* ---------- Article body grid (sticky TOC + column) ---------- */
   .article-grid {
     display: grid;
-    grid-template-columns: 200px minmax(0, 1fr) 280px;
-    gap: 48px 80px;
+    grid-template-columns: 200px minmax(0, 1fr) 240px;
+    gap: 48px;
     padding: 56px 0 0;
   }
-  .article-grid > .body { max-width: 720px; margin: 0 auto; min-width: 0; }
+  .article-grid > .body { max-width: min(720px, 100%); margin: 0 auto; min-width: 0; }
 
   /* TOC */
   .toc {
@@ -762,8 +762,8 @@
   /* Stats variant: short numeric headers, bigger type, centered, modest breakout */
   .spec-strip.stats {
     background: var(--white);
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: -48px;
+    margin-right: -48px;
   }
   .spec-strip.stats .item { align-items: center; text-align: center; padding: 28px 16px; }
   .spec-strip.stats .item:first-child { padding-left: 16px; }
@@ -1278,8 +1278,8 @@
   /* ---------- Responsive ---------- */
   @media (max-width: 1280px) {
     main.wrap { max-width: var(--maxw); }
-    .article-grid { grid-template-columns: 200px minmax(0, 1fr) 260px; gap: 48px 64px; }
-    .spec-strip.stats { margin-left: -64px; margin-right: -64px; }
+    .article-grid { grid-template-columns: 200px minmax(0, 1fr) 240px; gap: 48px; }
+    .spec-strip.stats { margin-left: -48px; margin-right: -48px; }
   }
   @media (max-width: 1100px) {
     .article-grid { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
@@ -1705,21 +1705,6 @@
         </blockquote>
       </section>
 
-      <figure class="kona-gallery" data-carousel role="group" aria-roledescription="carousel" aria-label="Hyundai Kona exterior and interior detail photos" tabindex="0">
-        <div class="ig-head"><div>
-          <p class="ig-kicker"><span class="dot"></span> A closer look</p>
-          <h3 class="ig-title">The Kona, <span>inside and out</span></h3>
-        </div>
-        <a class="ig-inv" href="https://www.hyundaidalton.com/searchnew.aspx">See current inventory <span class="arrow">&rarr;</span></a></div>
-        <div class="ig-stage">
-          <button class="ig-arrow prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <div class="ig-track" data-track><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="1 of 8"><img src="carousel/kona-1.jpg" alt="A sand-coloured Hyundai Kona photographed head-on outside the Dalton Hyundai National City showroom" loading="eager" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">On the lot</p><p class="cap-main">Head-on outside the showroom on the Mile of Cars.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="2 of 8"><img src="carousel/kona-3.webp" alt="The Hyundai Kona driver’s area seen from the passenger side, with the steering wheel and twin displays" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cabin</p><p class="cap-main">The driver’s area, from the passenger seat.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="3 of 8"><img src="carousel/kona-4.webp" alt="The Hyundai Kona digital instrument cluster showing speed, fuel and current-trip data" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cluster</p><p class="cap-main">Trip data and gauges on the driver’s display.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="4 of 8"><img src="carousel/kona-5.webp" alt="The Hyundai Kona centre touchscreen with physical climate and audio controls below it" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Screen</p><p class="cap-main">Centre touchscreen, with real buttons for climate below.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="5 of 8"><img src="carousel/kona-6.webp" alt="The full Hyundai Kona dashboard viewed head-on, twin displays under one pane above the front seats" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Dashboard</p><p class="cap-main">The full dash: two screens under one pane.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="6 of 8"><img src="carousel/kona-7.webp" alt="The Hyundai Kona cargo area behind the rear seats, seen through the open tailgate" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cargo</p><p class="cap-main">Cargo space behind the rear seats, tailgate open.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="7 of 8"><img src="carousel/kona-8.webp" alt="The Hyundai Kona engine bay with the hood open, showing the turbocharged GDI engine cover" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Under the hood</p><p class="cap-main">The turbocharged engine bay, cover in place.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><img src="carousel/kona-9.webp" alt="A rear three-quarter view of a grey Hyundai Kona showing the full-width tail light bar and KONA badge" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Exterior</p><p class="cap-main">Rear three-quarter: the full-width light bar.</p></div></div></div></div>
-          <button class="ig-arrow next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="ig-count" data-count aria-live="polite">01 / 08</div>
-        </div>
-        <div class="ig-thumbs" role="tablist" aria-label="Choose a photo" data-thumbs><button class="ig-thumb active" type="button" role="tab" aria-selected="true" aria-label="Photo 1: On the lot"><img src="carousel/kona-1.jpg" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 2: Cabin"><img src="carousel/kona-3.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 3: Cluster"><img src="carousel/kona-4.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 4: Screen"><img src="carousel/kona-5.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 5: Dashboard"><img src="carousel/kona-6.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 6: Cargo"><img src="carousel/kona-7.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 7: Under the hood"><img src="carousel/kona-8.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 8: Exterior"><img src="carousel/kona-9.webp" alt="" loading="lazy"></button></div>
-      </figure>
-
       <!-- §04 Why shop the Kona N at Dalton Hyundai -->
       <section class="s" id="why-dalton">
         <div class="section-num"><span>04</span><span>Why shop here</span></div>
@@ -1812,6 +1797,21 @@
           Catching a half-degree of toe before it eats $800 worth of rubber is precisely the kind of thing a complimentary alignment check pays for itself on.
         </blockquote>
       </section>
+
+      <figure class="kona-gallery" data-carousel role="group" aria-roledescription="carousel" aria-label="Hyundai Kona exterior and interior detail photos" tabindex="0">
+        <div class="ig-head"><div>
+          <p class="ig-kicker"><span class="dot"></span> A closer look</p>
+          <h3 class="ig-title">The Kona, <span>inside and out</span></h3>
+        </div>
+        <a class="ig-inv" href="https://www.hyundaidalton.com/searchnew.aspx">See current inventory <span class="arrow">&rarr;</span></a></div>
+        <div class="ig-stage">
+          <button class="ig-arrow prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <div class="ig-track" data-track><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="1 of 8"><img src="carousel/kona-1.jpg" alt="A sand-coloured Hyundai Kona photographed head-on outside the Dalton Hyundai National City showroom" loading="eager" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">On the lot</p><p class="cap-main">Head-on outside the showroom on the Mile of Cars.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="2 of 8"><img src="carousel/kona-3.webp" alt="The Hyundai Kona driver’s area seen from the passenger side, with the steering wheel and twin displays" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cabin</p><p class="cap-main">The driver’s area, from the passenger seat.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="3 of 8"><img src="carousel/kona-4.webp" alt="The Hyundai Kona digital instrument cluster showing speed, fuel and current-trip data" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cluster</p><p class="cap-main">Trip data and gauges on the driver’s display.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="4 of 8"><img src="carousel/kona-5.webp" alt="The Hyundai Kona centre touchscreen with physical climate and audio controls below it" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Screen</p><p class="cap-main">Centre touchscreen, with real buttons for climate below.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="5 of 8"><img src="carousel/kona-6.webp" alt="The full Hyundai Kona dashboard viewed head-on, twin displays under one pane above the front seats" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Dashboard</p><p class="cap-main">The full dash: two screens under one pane.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="6 of 8"><img src="carousel/kona-7.webp" alt="The Hyundai Kona cargo area behind the rear seats, seen through the open tailgate" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cargo</p><p class="cap-main">Cargo space behind the rear seats, tailgate open.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="7 of 8"><img src="carousel/kona-8.webp" alt="The Hyundai Kona engine bay with the hood open, showing the turbocharged GDI engine cover" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Under the hood</p><p class="cap-main">The turbocharged engine bay, cover in place.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><img src="carousel/kona-9.webp" alt="A rear three-quarter view of a grey Hyundai Kona showing the full-width tail light bar and KONA badge" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Exterior</p><p class="cap-main">Rear three-quarter: the full-width light bar.</p></div></div></div></div>
+          <button class="ig-arrow next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <div class="ig-count" data-count aria-live="polite">01 / 08</div>
+        </div>
+        <div class="ig-thumbs" role="tablist" aria-label="Choose a photo" data-thumbs><button class="ig-thumb active" type="button" role="tab" aria-selected="true" aria-label="Photo 1: On the lot"><img src="carousel/kona-1.jpg" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 2: Cabin"><img src="carousel/kona-3.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 3: Cluster"><img src="carousel/kona-4.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 4: Screen"><img src="carousel/kona-5.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 5: Dashboard"><img src="carousel/kona-6.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 6: Cargo"><img src="carousel/kona-7.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 7: Under the hood"><img src="carousel/kona-8.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 8: Exterior"><img src="carousel/kona-9.webp" alt="" loading="lazy"></button></div>
+      </figure>
 
       <!-- §06 Kona N vs. the regular Kona: a straight comparison -->
       <section class="s" id="vs-kona">
