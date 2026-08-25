@@ -113,7 +113,6 @@
       "url": "https://www.hyundaidalton.com/",
       "image": "https://www.hyundaidalton.com/img/dalton-hyundai-storefront.jpg",
       "logo": "https://www.hyundaidalton.com/img/dalton-hyundai-logo.png",
-      "telephone": "+1-619-452-3217",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -157,13 +156,11 @@
       "department": [
         {
           "@type": "AutoRepair",
-          "name": "Dalton Hyundai National City Service",
-          "telephone": "+1-619-314-5768"
+          "name": "Dalton Hyundai National City Service"
         },
         {
           "@type": "AutoPartsStore",
-          "name": "Dalton Hyundai National City Parts",
-          "telephone": "+1-619-604-0487"
+          "name": "Dalton Hyundai National City Parts"
         }
       ],
       "areaServed": [
@@ -270,7 +267,7 @@
           "name": "Is the Kona N available at Dalton Hyundai National City?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We stock the Hyundai Kona N, with availability changing as units arrive, it's a low-volume performance model, so inventory moves quickly. Check current stock at hyundaidalton.com or call (619) 452-3217 for what's on the lot today."
+            "text": "We stock the Hyundai Kona N, with availability changing as units arrive, it's a low-volume performance model, so inventory moves quickly. Check current stock at hyundaidalton.com or reach us through the Dalton Hyundai Contact Portal for what's on the lot today."
           }
         },
         {
@@ -310,7 +307,7 @@
           "name": "Can I test drive a Kona N on a Sunday?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Our sales department is open Sunday from 10:00 AM to 6:00 PM. Call (619) 452-3217 ahead of time to have a Kona N ready for you."
+            "text": "Yes. Our sales department is open Sunday from 10:00 AM to 6:00 PM. Reach us through the Dalton Hyundai Contact Portal ahead of time to have a Kona N ready for you."
           }
         },
         {
@@ -593,6 +590,38 @@
   .gutter .chip .stars { color: var(--blue); letter-spacing: 2px; font-size: 14px; margin-bottom: 4px; }
   .gutter .chip strong { font-family: var(--display); font-size: 28px; font-weight: 500; color: var(--ink); display: block; line-height: 1; }
   .gutter .chip .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  /* ---------- Detail carousel ---------- */
+  .kona-gallery {margin: 34px 0;}
+  .kona-gallery .ig-head {display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin:0 0 16px; flex-wrap:wrap;}
+  .kona-gallery .ig-kicker {font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); font-weight:700; display:flex; align-items:center; gap:9px; margin:0 0 6px;}
+  .kona-gallery .ig-kicker .dot {width:7px; height:7px; border-radius:50%; background:var(--blue); box-shadow:0 0 0 4px rgba(0,44,94,.14);}
+  .kona-gallery .ig-title {font-family:var(--display); font-size:20px; font-weight:600; line-height:1.25; letter-spacing:-.01em; color:var(--ink); margin:0;}
+  .kona-gallery .ig-title span {color:var(--muted); font-weight:400;}
+  .kona-gallery .ig-inv {flex:none; display:inline-flex; align-items:center; gap:7px; font-family:var(--display); font-size:13.5px; font-weight:600; color:var(--blue-deep); text-decoration:none; white-space:nowrap; padding-bottom:2px;}
+  .kona-gallery .ig-inv .arrow {transition:transform .2s ease;}
+  .kona-gallery .ig-inv:hover {color:var(--blue);}
+  .kona-gallery .ig-inv:hover .arrow {transform:translateX(3px);}
+  .ig-stage {position:relative; border-radius:var(--radius-md); overflow:hidden; background:#0e1216; aspect-ratio:4/3; box-shadow:0 24px 50px -28px rgba(0,27,58,.55), inset 0 0 0 1px rgba(0,0,0,.05);}
+  .ig-track {display:flex; height:100%; transition:transform .55s cubic-bezier(.22,.61,.36,1); will-change:transform;}
+  .ig-slide {position:relative; flex:0 0 100%; height:100%;}
+  .ig-slide img {width:100%; height:100%; object-fit:cover; object-position:center; display:block;}
+  .ig-slide::after {content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.28) 64%,rgba(0,0,0,.60) 84%,rgba(0,0,0,.78) 100%); pointer-events:none;}
+  .ig-cap {position:absolute; left:0; right:0; bottom:0; z-index:2; padding:22px 24px; color:#fff; pointer-events:none;}
+  .ig-cap .cap-txt {max-width:78%;}
+  .ig-cap .cap-ey {font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#9dbde0; font-weight:700; margin:0 0 5px;}
+  .ig-cap .cap-main {font-family:var(--display); font-size:17px; font-weight:600; line-height:1.3; letter-spacing:-.005em; margin:0; text-wrap:balance;}
+  .ig-count {position:absolute; right:16px; top:16px; z-index:3; font-family:var(--display); font-variant-numeric:tabular-nums; font-size:12.5px; font-weight:600; letter-spacing:.06em; color:rgba(255,255,255,.92); background:rgba(0,0,0,.42); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,.18); padding:6px 12px; border-radius:999px;}
+  .ig-arrow {position:absolute; top:50%; transform:translateY(-50%); z-index:3; width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.24); background:rgba(0,0,0,.42); backdrop-filter:blur(6px); color:#fff; display:grid; place-items:center; cursor:pointer; transition:background .18s ease;}
+  .ig-arrow:hover {background:rgba(0,0,0,.68);}
+  .ig-arrow svg {width:20px; height:20px;}
+  .ig-arrow.prev {left:14px;}
+  .ig-arrow.next {right:14px;}
+  .ig-thumbs {display:flex; gap:8px; margin-top:10px; overflow-x:auto; padding-bottom:4px; scrollbar-width:thin;}
+  .ig-thumb {flex:0 0 96px; height:64px; padding:0; border:1px solid var(--rule); border-radius:8px; overflow:hidden; background:none; cursor:pointer; opacity:.55; transition:opacity .18s ease, border-color .18s ease;}
+  .ig-thumb img {width:100%; height:100%; object-fit:cover; display:block;}
+  .ig-thumb.active, .ig-thumb:hover {opacity:1; border-color:var(--blue);}
+  @media (max-width:700px){ .ig-cap {padding:16px 16px;} .ig-cap .cap-main {font-size:15px;} .ig-thumb {flex:0 0 78px; height:54px;} }
 
   /* ---------- Section + typography ---------- */
   section.s { scroll-margin-top: 32px; padding: 64px 0; border-top: 1px solid var(--rule); }
@@ -1570,15 +1599,15 @@
           <li>An electronically controlled <strong>limited-slip differential</strong>, <strong>adaptive dampers</strong>, and bigger brakes than any other Kona.</li>
         </ul>
 
-        <p>The Kona N is a low-volume performance model, so stock moves fast. See exactly what's on the lot today at <a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener">hyundaidalton.com</a>, or call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> for a specific color or build.</p>
+        <p>The Kona N is a low-volume performance model, so stock moves fast. See exactly what's on the lot today at <a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener">hyundaidalton.com</a>, or reach us through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> for a specific color or build.</p>
 
         <blockquote class="pull">
-          Want to see a Kona N in person? Browse current inventory at hyundaidalton.com, then call (619) 452-3217 to hold one for a test drive before you make the trip in.
+          Want to see a Kona N in person? Browse current inventory at hyundaidalton.com, then reach us through the Dalton Hyundai Contact Portal to hold one for a test drive before you make the trip in.
         </blockquote>
 
         
 
-        <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Note ·</strong> Inventory, trims, and specifications change as units arrive. EPA fuel-economy figures should be verified at fueleconomy.gov before purchase. Call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> for what's on the lot today.</p>
+        <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Note ·</strong> Inventory, trims, and specifications change as units arrive. EPA fuel-economy figures should be verified at fueleconomy.gov before purchase. Reach us through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> for what's on the lot today.</p>
       </section>
 
       <!-- §02 What the EPA and IIHS numbers actually tell you -->
@@ -1592,7 +1621,7 @@
           <figcaption class="visually-hidden">IIHS publishes its award criteria and per-model results in full, so the rating can be checked directly.</figcaption>
         </figure>
 
-        <p><strong>Fuel.</strong> The EPA rates the Kona N at 20 mpg city and 27 mpg highway, for a combined 23 mpg. Confirm the exact rating for any model year at <a href="https://www.fueleconomy.gov" rel="noopener" target="_blank">fueleconomy.gov</a>.</p>
+        <p><strong>Fuel.</strong> The EPA rates the Kona N at 20 mpg city and 27 mpg highway, for a combined 23 mpg. Confirm the exact rating for any model year at fueleconomy.gov.</p>
 
         <ul class="bullets">
           <li><strong>Thirstier than a base Kona, and it should be.</strong> You're paying in fuel for the turbo and the drive that comes with it.</li>
@@ -1600,7 +1629,7 @@
           <li><strong>Budget for premium</strong> if you're set on the N.</li>
         </ul>
 
-        <p><strong>Safety.</strong> The standard Kona platform has performed well in <a href="https://www.iihs.org" rel="noopener" target="_blank">IIHS</a> testing, and <a href="https://www.nhtsa.gov" rel="noopener" target="_blank">NHTSA</a> publishes crash-test ratings and open recall campaigns by VIN.</p>
+        <p><strong>Safety.</strong> The standard Kona platform has performed well in IIHS testing, and NHTSA publishes crash-test ratings and open recall campaigns by VIN.</p>
 
         <ul class="bullets">
           <li><strong>We check every unit before it lists.</strong> We pulled the VIN history and checked the NHTSA recall database on each Kona N we took in this summer, before it ever went on the line.</li>
@@ -1676,6 +1705,21 @@
         </blockquote>
       </section>
 
+      <figure class="kona-gallery" data-carousel role="group" aria-roledescription="carousel" aria-label="Hyundai Kona exterior and interior detail photos" tabindex="0">
+        <div class="ig-head"><div>
+          <p class="ig-kicker"><span class="dot"></span> A closer look</p>
+          <h3 class="ig-title">The Kona, <span>inside and out</span></h3>
+        </div>
+        <a class="ig-inv" href="https://www.hyundaidalton.com/searchnew.aspx">See current inventory <span class="arrow">&rarr;</span></a></div>
+        <div class="ig-stage">
+          <button class="ig-arrow prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <div class="ig-track" data-track><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="1 of 8"><img src="carousel/kona-1.jpg" alt="A sand-coloured Hyundai Kona photographed head-on outside the Dalton Hyundai National City showroom" loading="eager" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">On the lot</p><p class="cap-main">Head-on outside the showroom on the Mile of Cars.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="2 of 8"><img src="carousel/kona-3.webp" alt="The Hyundai Kona driver’s area seen from the passenger side, with the steering wheel and twin displays" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cabin</p><p class="cap-main">The driver’s area, from the passenger seat.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="3 of 8"><img src="carousel/kona-4.webp" alt="The Hyundai Kona digital instrument cluster showing speed, fuel and current-trip data" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cluster</p><p class="cap-main">Trip data and gauges on the driver’s display.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="4 of 8"><img src="carousel/kona-5.webp" alt="The Hyundai Kona centre touchscreen with physical climate and audio controls below it" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Screen</p><p class="cap-main">Centre touchscreen, with real buttons for climate below.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="5 of 8"><img src="carousel/kona-6.webp" alt="The full Hyundai Kona dashboard viewed head-on, twin displays under one pane above the front seats" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Dashboard</p><p class="cap-main">The full dash: two screens under one pane.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="6 of 8"><img src="carousel/kona-7.webp" alt="The Hyundai Kona cargo area behind the rear seats, seen through the open tailgate" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Cargo</p><p class="cap-main">Cargo space behind the rear seats, tailgate open.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="7 of 8"><img src="carousel/kona-8.webp" alt="The Hyundai Kona engine bay with the hood open, showing the turbocharged GDI engine cover" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Under the hood</p><p class="cap-main">The turbocharged engine bay, cover in place.</p></div></div></div><div class="ig-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><img src="carousel/kona-9.webp" alt="A rear three-quarter view of a grey Hyundai Kona showing the full-width tail light bar and KONA badge" loading="lazy" decoding="async"><div class="ig-cap"><div class="cap-txt"><p class="cap-ey">Exterior</p><p class="cap-main">Rear three-quarter: the full-width light bar.</p></div></div></div></div>
+          <button class="ig-arrow next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <div class="ig-count" data-count aria-live="polite">01 / 08</div>
+        </div>
+        <div class="ig-thumbs" role="tablist" aria-label="Choose a photo" data-thumbs><button class="ig-thumb active" type="button" role="tab" aria-selected="true" aria-label="Photo 1: On the lot"><img src="carousel/kona-1.jpg" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 2: Cabin"><img src="carousel/kona-3.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 3: Cluster"><img src="carousel/kona-4.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 4: Screen"><img src="carousel/kona-5.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 5: Dashboard"><img src="carousel/kona-6.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 6: Cargo"><img src="carousel/kona-7.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 7: Under the hood"><img src="carousel/kona-8.webp" alt="" loading="lazy"></button><button class="ig-thumb" type="button" role="tab" aria-selected="false" aria-label="Photo 8: Exterior"><img src="carousel/kona-9.webp" alt="" loading="lazy"></button></div>
+      </figure>
+
       <!-- §04 Why shop the Kona N at Dalton Hyundai -->
       <section class="s" id="why-dalton">
         <div class="section-num"><span>04</span><span>Why shop here</span></div>
@@ -1728,15 +1772,14 @@
       <aside class="cta-inline" aria-labelledby="cta-inline-heading">
         <div class="eyebrow">Dalton Hyundai National City</div>
         <h3 id="cta-inline-heading">See a Kona N in person today.</h3>
-        <p class="lede no-cap">Browse live Kona N inventory online, then call ahead so we can have a specific build ready for your test drive. Ask us to demonstrate the N Grin Shift overboost button when you come in.</p>
+        <p class="lede no-cap">Browse live Kona N inventory online, then reach out ahead so we can have a specific build ready for your test drive. Ask us to demonstrate the N Grin Shift overboost button when you come in.</p>
         <div class="actions">
           <a class="btn primary" href="https://www.hyundaidalton.com/searchnew.aspx">View inventory <span class="arrow">→</span></a>
-          <a class="btn ghost" href="tel:+16194523217">Call sales · (619) 452-3217</a>
+          <a class="btn ghost" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a>
         </div>
         <div class="meta">
           <div class="meta-item"><span class="k">Address</span><span class="v">3150 National City Blvd, National City CA</span></div>
-          <div class="meta-item"><span class="k">Sales</span><span class="v"><a class="tel" href="tel:+16194523217">(619) 452-3217</a></span></div>
-          <div class="meta-item"><span class="k">Service</span><span class="v"><a class="tel" href="tel:+16193145768">(619) 314-5768</a></span></div>
+          <div class="meta-item"><span class="k">Contact</span><span class="v"><a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact</a></span></div>
           <div class="meta-item"><span class="k">Hours</span><span class="v">Mon-Fri 9-8 · Sat 8-8 · Sun 10-6</span></div>
         </div>
       </aside>
@@ -1863,14 +1906,19 @@
         </div>
 
         <p style="margin-top: 28px;">The premium on the Kona N buys you capability, not luxury. If you want to be quicker, sharper, and louder, it's worth it. If you want to be quieter, comfier, and cheaper to run, the standard Kona is the smarter buy, and we'll happily sell you that one.</p>
-        <p>For valuation context on either, <a href="https://www.edmunds.com" rel="noopener" target="_blank">Edmunds</a> and <a href="https://www.kbb.com" rel="noopener" target="_blank">Kelley Blue Book</a> both publish trade-in and market-value ranges you can check against your current vehicle before you come in.</p>
+        <p>For valuation context on either, Edmunds and Kelley Blue Book both publish trade-in and market-value ranges you can check against your current vehicle before you come in.</p>
 
         <ul class="bullets">
-          <li><strong>Sales:</strong> <a class="tel" href="tel:+16194523217">(619) 452-3217</a></li>
-          <li><strong>Service:</strong> <a class="tel" href="tel:+16193145768">(619) 314-5768</a></li>
-          <li><strong>Parts:</strong> <a class="tel" href="tel:+16196040487">(619) 604-0487</a></li>
+          <li><strong>Sales, Service &amp; Parts:</strong> <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a></li>
         </ul>
       </section>
+
+      <figure class="photo-block">
+        <div class="full-img cargo has-photo" role="img" aria-label="A red Hyundai Kona N Line cornering on a coastal road">
+          <img class="scene" src="kona-n-cornering.webp" alt="A red Hyundai Kona N Line leaning through a bend on a coastal road, hillside behind it" loading="lazy" decoding="async" width="1600" height="1067" />
+        </div>
+        <figcaption>The N side of the range is built for exactly this: turn-in, body control, and brakes that stay with you. That is the difference you feel on a test drive.</figcaption>
+      </figure>
 
       <!-- §07 How buying a Kona N here works -->
       <section class="s" id="buying">
@@ -1879,13 +1927,13 @@
         <p class="lede no-cap">Here's the path from search to keys.</p>
         <ol class="bullets">
           <li><strong>Check inventory online.</strong> See which Kona N units are in stock at <a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener">hyundaidalton.com</a>.</li>
-          <li><strong>Call ahead.</strong> Ring our sales team at <a class="tel" href="tel:+16194523217">(619) 452-3217</a> to confirm a specific Kona N is available and have it ready for you. Because these are low-volume, the color or build you want may be in transit rather than on the lot.</li>
+          <li><strong>Reach out ahead.</strong> Message our sales team through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> to confirm a specific Kona N is available and have it ready for you. Because these are low-volume, the color or build you want may be in transit rather than on the lot.</li>
           <li><strong>Come drive it.</strong> We're at 3150 National City Blvd, right off I-5. Take it out and see how it feels, and ask us to demonstrate the N Grin Shift overboost button so you understand what you're buying.</li>
           <li><strong>Talk it through.</strong> We'll walk you through trim, equipment, financing, and your options at your pace, guidance, not pressure.</li>
         </ol>
 
         <p>If you're trading in, bring your title or payoff details and your registration.</p>
-        <p>California buyers should also know the DMV collects use tax, title, and registration fees on top of the sale price; the current fee schedule is published at the <a href="https://www.dmv.ca.gov" rel="noopener" target="_blank">California DMV</a> so there are no surprises when you sign.</p>
+        <p>California buyers should also know the DMV collects use tax, title, and registration fees on top of the sale price; the current fee schedule is published at the California DMV so there are no surprises when you sign.</p>
         <p>We'll walk through the out-the-door figure line by line before you commit to anything.</p>
 
         <h3>A dealership you can check out before you trust it</h3>
@@ -1920,7 +1968,7 @@
 
         <p>One of the conveniences of buying here: we're open for Sunday sales from 10:00 AM to 6:00 PM, so you can come look at a Kona N on a day most people have free.</p>
         <p>Service and parts are closed Sundays, so if you need a question answered by a technician, plan a Saturday-morning visit before the 5:00 PM close.</p>
-        <p>Reach sales at <a class="tel" href="tel:+16194523217">(619) 452-3217</a>, service at <a class="tel" href="tel:+16193145768">(619) 314-5768</a>, and parts at <a class="tel" href="tel:+16196040487">(619) 604-0487</a>.</p>
+        <p>Reach sales, service and parts through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a>.</p>
       </section>
     </div>
 
@@ -1978,7 +2026,7 @@
         <h5>Hours &amp; contact</h5>
         <p><strong>Sales</strong> Mon-Fri 9 AM-8 PM · Sat 8 AM-8 PM<br><strong>Sunday</strong> 10 AM-6 PM</p>
         <p><strong>Service</strong> Mon-Fri 7 AM-6 PM · Sat 8 AM-5 PM</p>
-        <p><strong>Sales</strong> <a class="tel" href="tel:+16194523217">(619) 452-3217</a><br><strong>Service</strong> <a class="tel" href="tel:+16193145768">(619) 314-5768</a><br><strong>Parts</strong> <a class="tel" href="tel:+16196040487">(619) 604-0487</a></p>
+        <p><strong>Sales · Service · Parts</strong> <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact</a></p>
         <p>3150 National City Blvd, National City, CA 91950.</p>
       </div>
     </div>
@@ -2006,7 +2054,7 @@
             <summary>Is the Kona N available at Dalton Hyundai National City?</summary>
             <div class="answer">
               <p>We stock the Hyundai Kona N, with availability changing as units arrive, it's a low-volume performance model, so inventory moves quickly.</p>
-              <p>Check current stock at hyundaidalton.com or call (619) 452-3217 for what's on the lot today.</p>
+              <p>Check current stock at hyundaidalton.com or reach us through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> for what's on the lot today.</p>
             </div>
           </details>
 
@@ -2045,7 +2093,7 @@
             <summary>Can I test drive a Kona N on a Sunday?</summary>
             <div class="answer">
               <p>Yes. Our sales department is open Sunday from 10:00 AM to 6:00 PM.</p>
-              <p>Call (619) 452-3217 ahead of time to have a Kona N ready for you.</p>
+              <p>Reach us through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> ahead of time to have a Kona N ready for you.</p>
             </div>
           </details>
 
@@ -2070,17 +2118,17 @@
     <aside class="gutter" aria-label="Quick contact">
       <div class="chip">
         <div class="lbl">Sales</div>
-        <a class="tel" href="tel:+16194523217"><strong style="font-family:var(--display); font-size:24px;">(619) 452-3217</strong></a>
+        <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank"><strong style="font-family:var(--display); font-size:17px; line-height:1.25;">Dalton Hyundai Contact Portal</strong></a>
         <div class="sub">Mon-Fri 9-8 · Sat 8-8 · Sun 10-6 · Ask for Sergio Martell</div>
       </div>
       <div class="chip">
         <div class="lbl">Service</div>
-        <a class="tel" href="tel:+16193145768"><strong style="font-family:var(--display); font-size:24px;">(619) 314-5768</strong></a>
+        <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank"><strong style="font-family:var(--display); font-size:17px; line-height:1.25;">Dalton Hyundai Contact Portal</strong></a>
         <div class="sub">Mon-Fri 7-6 · Sat 8-5 · Free alignment &amp; tire check</div>
       </div>
       <div class="chip">
         <div class="lbl">Parts</div>
-        <a class="tel" href="tel:+16196040487"><strong style="font-family:var(--display); font-size:24px;">(619) 604-0487</strong></a>
+        <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank"><strong style="font-family:var(--display); font-size:17px; line-height:1.25;">Dalton Hyundai Contact Portal</strong></a>
         <div class="sub">Genuine Hyundai Parts</div>
       </div>
       <div class="chip">
@@ -2111,17 +2159,17 @@
 
         <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Kona N specifications described from Hyundai's published model information. EPA fuel-economy figures vary by model year and should be verified at fueleconomy.gov.</p>
         <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Crash-test ratings and open recall campaigns should be confirmed at iihs.org and nhtsa.gov. California use tax, title, and registration fees should be confirmed at dmv.ca.gov.</p>
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">The Kona N is a low-volume performance model and inventory changes. For current stock on a specific build, call Sales at <a class="tel" href="tel:+16194523217"><strong>(619) 452-3217</strong></a>.</p>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">The Kona N is a low-volume performance model and inventory changes. For current stock on a specific build, reach Sales through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a>.</p>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about the Hyundai Kona N at Dalton Hyundai National City is not answered here, call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> and ask for a sales advisor, or browse inventory at <a href="https://www.hyundaidalton.com/" rel="noopener">hyundaidalton.com</a>.</em></p>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about the Hyundai Kona N at Dalton Hyundai National City is not answered here, reach us through the <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a> and ask for a sales advisor, or browse inventory at <a href="https://www.hyundaidalton.com/" rel="noopener">hyundaidalton.com</a>.</em></p>
 
         <ul class="ext">
-          <li><a href="https://www.fueleconomy.gov" rel="noopener" target="_blank">U.S. Department of Energy · fueleconomy.gov, EPA city/highway/combined fuel-economy ratings</a></li>
-          <li><a href="https://www.iihs.org" rel="noopener" target="_blank">IIHS · Insurance Institute for Highway Safety crash-test results for the Kona platform</a></li>
-          <li><a href="https://www.nhtsa.gov" rel="noopener" target="_blank">NHTSA · crash-test ratings and open recall campaigns searchable by VIN</a></li>
-          <li><a href="https://www.dmv.ca.gov" rel="noopener" target="_blank">California DMV · current use tax, title, and registration fee schedules</a></li>
-          <li><a href="https://www.edmunds.com" rel="noopener" target="_blank">Edmunds · third-party Kona N reviews and market-value ranges</a></li>
-          <li><a href="https://www.kbb.com" rel="noopener" target="_blank">Kelley Blue Book · trade-in and market-value estimates</a></li>
+          <li>U.S. Department of Energy · fueleconomy.gov, EPA city/highway/combined fuel-economy ratings</li>
+          <li>IIHS · Insurance Institute for Highway Safety crash-test results for the Kona platform</li>
+          <li>NHTSA · crash-test ratings and open recall campaigns searchable by VIN</li>
+          <li>California DMV · current use tax, title, and registration fee schedules</li>
+          <li>Edmunds · third-party Kona N reviews and market-value ranges</li>
+          <li>Kelley Blue Book · trade-in and market-value estimates</li>
           <li><a href="https://www.hyundaidalton.com/searchnew.aspx" rel="noopener" target="_blank">Dalton Hyundai National City · current new Hyundai inventory and sales contact</a></li>
         </ul>
       </div>
@@ -2137,13 +2185,11 @@
     <p>Browse live Kona N inventory at hyundaidalton.com, then call our sales team to set up a test drive at Dalton Hyundai National City. We're here to guide you every step of the way.</p>
     <div class="actions">
       <a class="btn primary" href="https://www.hyundaidalton.com/searchnew.aspx">View inventory <span class="arrow">→</span></a>
-      <a class="btn ghost" href="tel:+16194523217">Call sales · (619) 452-3217</a>
+      <a class="btn ghost" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank">Dalton Hyundai Contact Portal</a>
       <a class="btn ghost" href="https://www.google.com/maps?saddr=Current+Location&amp;daddr=3150+National+City+Blvd.,+National+City,+CA+91950" rel="noopener" target="_blank">Get Directions</a>
     </div>
     <div class="phones">
-      <span>Sales <a class="tel" href="tel:+16194523217"><strong>(619) 452-3217</strong></a></span>
-      <span>Service <a class="tel" href="tel:+16193145768"><strong>(619) 314-5768</strong></a></span>
-      <span>Parts <a class="tel" href="tel:+16196040487"><strong>(619) 604-0487</strong></a></span>
+      <span>Sales · Service · Parts <a class="tel" href="https://www.hyundaidalton.com/contactus.aspx" rel="noopener" target="_blank"><strong>Dalton Hyundai Contact Portal</strong></a></span>
       <span>Visit <a class="tel" href="https://maps.google.com/?q=3150+National+City+Blvd+National+City+CA+91950" rel="noopener"><strong>3150 National City Blvd</strong></a></span>
     </div>
   </div>
@@ -2174,6 +2220,37 @@
 
     map.forEach((_li, el) => io.observe(el));
   })();
+</script>
+
+<script>
+/* Kona detail gallery */
+(function(){
+  document.querySelectorAll('[data-carousel]').forEach(function(root){
+    var track=root.querySelector('[data-track]');
+    if(!track) return;
+    var slides=Array.prototype.slice.call(track.children);
+    var thumbs=Array.prototype.slice.call(root.querySelectorAll('[data-thumbs] .ig-thumb'));
+    var countEl=root.querySelector('[data-count]');
+    var prev=root.querySelector('.ig-arrow.prev'), next=root.querySelector('.ig-arrow.next');
+    var n=slides.length, i=0;
+    function pad(x){ return (x<10?'0':'')+x; }
+    function go(idx){
+      i=(idx+n)%n;
+      track.style.transform='translateX('+(-i*100)+'%)';
+      if(countEl) countEl.textContent=pad(i+1)+' / '+pad(n);
+      thumbs.forEach(function(t,k){ t.classList.toggle('active',k===i); t.setAttribute('aria-selected',k===i?'true':'false'); });
+      slides.forEach(function(s,k){ s.setAttribute('aria-hidden',k===i?'false':'true'); });
+    }
+    if(prev) prev.addEventListener('click',function(){ go(i-1); });
+    if(next) next.addEventListener('click',function(){ go(i+1); });
+    thumbs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
+    root.addEventListener('keydown',function(e){
+      if(e.key==='ArrowLeft'){ e.preventDefault(); go(i-1); }
+      else if(e.key==='ArrowRight'){ e.preventDefault(); go(i+1); }
+    });
+    go(0);
+  });
+})();
 </script>
 
 </body>
